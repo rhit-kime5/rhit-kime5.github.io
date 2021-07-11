@@ -1,0 +1,73 @@
+body {
+    background: white;
+    font-family: 'Times New Roman';
+    font-size: 18px;
+    line-height: 1.5;
+    color: black;
+}
+
+#about img {
+    height: 15em;
+    float: left; /* put image inline and shift left */
+    margin-right: 3rem;
+}
+
+body > nav ul li {
+    display: inline-block; /* puts nav bar items inline*/
+}
+
+/* anchor tags color and hover color */
+a {
+    color:black;
+}
+a:hover {
+    color: blueviolet;
+}
+
+/* CSS grid */
+body {
+    display: grid;
+    grid-template-areas: 
+        "head nav"
+        "main main"
+        "foot foot";
+    grid-template-columns: auto 4fr;
+    grid-template-rows: auto auto 1fr auto;
+}
+/* grid-area assignments (necessary for above to work) */
+body > header {
+    grid-area: head;
+}
+body > nav {
+    grid-area: nav;
+}
+body > main {
+    grid-area: main;
+}
+body > footer {
+    grid-area: foot;
+}
+
+/* flexbox for portfolio */
+#portfolioItems {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+#portfolioItems li {
+    flex-basis: 48%;
+    max-width: 100%;
+}
+#portImg {
+    max-height: 280px;
+    float: center;
+}
+
+
+
+
+
+
+
+
+
