@@ -1,16 +1,40 @@
-	var controller = new ScrollMagic.Controller();
+/**
+ * @fileoverview
+ * Provides the JavaScript interactions for all pages.
+ *
+ * @author 
+ * Edward Kim
+ */
+//
 
-    var revealElements = document.getElementsByClassName("portItems");
-        for (var i = 0; i < revealElements.length; i++) { 
-            new ScrollMagic.Scene({
-                    triggerElement: revealElements[i], 
-                    offset: 50, 
-                    duration: "80%",
-                    triggerHook: 0.9,
-                })
-                .setClassToggle(revealElements[i], "visible") 
-             /*   .addIndicators({
-                    name: "portItems " + (i + 1)
-                }) */
-                .addTo(controller);
-        }
+var rhit = rhit || {};	//	namespace
+
+rhit.variableName = "";	//	globals
+
+
+//	function syntax example
+rhit.functionName = function () {
+
+};
+
+
+//	class syntax example
+rhit.ClassName = class {
+	constructor() {
+
+	}
+
+	methodName() {
+
+	}
+}
+
+
+//	main function
+rhit.main = function () {
+	console.log("Ready");
+};
+
+
+//	main function call
+rhit.main();
