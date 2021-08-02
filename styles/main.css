@@ -2,10 +2,11 @@ body {
     background: black;
 }
 
-.navbar {
+.navbar, #text {
     color: white;
 }
 
 .page-container {
     margin-top: 75px;
 }
+
