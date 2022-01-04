@@ -36,5 +36,5 @@ rhit.main = function () {
 };
 
 
-//	main function cal
+//	main function call
 rhit.main();
