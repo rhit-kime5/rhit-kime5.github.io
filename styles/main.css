@@ -33,11 +33,13 @@ body {
     display: flex;
     flex-wrap: wrap;
     padding: 4vw;
+    justify-content: right;
 }
 
 .workItem {
-    max-width: 48vw;
-    padding: 1vw;
+    width: 43vw;
+    margin-left: 0.5vw;
+    margin-right: 0.5vw;
     margin-bottom: 10vh;
 }
 
