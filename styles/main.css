@@ -6,6 +6,7 @@ body {
     background-attachment: fixed;
     background-position: top right;
     margin-top: 9vh;
+    font-family: "Maven Pro", sans-serif;
 }
 
 #logo {
@@ -19,35 +20,35 @@ body {
     text-align: center;
     margin-left: 7.3vw;
     margin-right: 7.3vw;
-    /* background-color: black; */
+    font-family: "Inconsolata", monospace;
 }
 
 #mission {
     margin-top: 14vh;
     font-style: italic;
-    
 }
 
 #workGrid {
-    margin-top: 8vh;
+    margin-top: 6vh;
     display: flex;
     flex-wrap: wrap;
-    padding: 3vw;
+    padding: 4vw;
 }
 
 .workItem {
-    max-width: 50vw;
+    max-width: 48vw;
     padding: 1vw;
     margin-bottom: 10vh;
 }
 
 .workTitle {
+    max-width: 90%;
     margin-bottom: 2vh;
 }
 
 a {
     color: white;
-    font-size: 1.5em;
+    font-size: 1.7em;
 }
 
 a:hover {
