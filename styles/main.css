@@ -1,73 +1,53 @@
 body {
-    background: white;
-    font-family: 'Times New Roman';
-    font-size: 18px;
-    line-height: 1.5;
-    color: black;
+    background: black;
+    margin-top: 9vh;
 }
 
-#about img {
-    height: 15em;
-    float: left; /* put image inline and shift left */
-    margin-right: 3rem;
+#logo {
+    height: 4vh;
+    margin-left: 7.3vw;
 }
 
-body > nav ul li {
-    display: inline-block; /* puts nav bar items inline*/
+#mission, #author {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 7.3vw;
+    margin-right: 7.3vw;
 }
 
-/* anchor tags color and hover color */
-a {
-    color:black;
-}
-a:hover {
-    color: blueviolet;
+#mission {
+    margin-top: 12vh;
+    font-style: italic;
 }
 
-/* CSS grid */
-body {
-    display: grid;
-    grid-template-areas: 
-        "head nav"
-        "main main"
-        "foot foot";
-    grid-template-columns: auto 4fr;
-    grid-template-rows: auto auto 1fr auto;
-}
-/* grid-area assignments (necessary for above to work) */
-body > header {
-    grid-area: head;
-}
-body > nav {
-    grid-area: nav;
-}
-body > main {
-    grid-area: main;
-}
-body > footer {
-    grid-area: foot;
-}
-
-/* flexbox for portfolio */
-#portfolioItems {
+#workGrid {
+    margin-top: 7vh;
     display: flex;
     flex-wrap: wrap;
+    padding: 3vw;
+}
 
+.workItem {
+    max-width: 50vw;
+    padding: 1vw;
+    margin-bottom: 10vh;
 }
-#portfolioItems li {
-    flex-basis: 48%;
-    max-width: 100%;
+
+.workTitle {
+    margin-bottom: 2vh;
 }
-#portImg {
-    max-height: 280px;
+
+a {
+    color: white;
+    font-size: 1.5em;
+}
+
+a:hover {
+    color: white;
+}
+
+.workImage {
+    max-width: 90%;
     float: center;
 }
-
-
-
-
-
-
-
-
-
