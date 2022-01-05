@@ -1,5 +1,10 @@
 body {
     background: black;
+    background-image: url("f-15 neural net.webp");
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
     margin-top: 9vh;
 }
 
@@ -14,15 +19,17 @@ body {
     text-align: center;
     margin-left: 7.3vw;
     margin-right: 7.3vw;
+    /* background-color: black; */
 }
 
 #mission {
-    margin-top: 12vh;
+    margin-top: 14vh;
     font-style: italic;
+    
 }
 
 #workGrid {
-    margin-top: 7vh;
+    margin-top: 8vh;
     display: flex;
     flex-wrap: wrap;
     padding: 3vw;
