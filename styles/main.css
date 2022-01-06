@@ -28,7 +28,7 @@ body {
     font-style: italic;
 }
 
-#workGrid {
+.workGrid {
     margin-top: 6vh;
     display: flex;
     flex-wrap: wrap;
@@ -36,10 +36,32 @@ body {
     justify-content: right;
 }
 
+
+#workPage {
+    margin-top: 2vh;
+    justify-content: left;
+    padding: 0;
+    padding-top: 4vw;
+}
+
 .workItem {
     width: 43vw;
     margin-left: 2vw;
     margin-bottom: 10vh;
+}
+
+#workPageItem {
+    margin-left: 7.3vw;
+}
+
+#workTextItem {
+    width: 43vw;
+    margin-left: 0;
+}
+
+.workText {
+    color: white;
+    font-size: 1.45em;
 }
 
 .workTitle {
@@ -56,10 +78,13 @@ a:hover {
     color: white;
 }
 
-.workImage {
+.workImage, .workText {
     width: 90%;
     float: center;
 }
+
+
+
 
 .reveal {
     opacity: 0;
