@@ -1,1 +1,1 @@
-# Edward Kim and his works.
+# README
