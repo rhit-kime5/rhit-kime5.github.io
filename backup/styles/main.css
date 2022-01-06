@@ -1,0 +1,85 @@
+body {
+    background: black;
+    background-image: url("f-15 neural net.webp");
+    background-size: 80vw;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: top right;
+    margin-top: 9vh;
+    font-family: "Maven Pro", sans-serif;
+}
+
+#logo {
+    height: 4vh;
+    margin-left: 7.3vw;
+}
+
+#mission, #author {
+    color: white;
+    font-size: 1.5em;
+    text-align: center;
+    margin-left: 7.3vw;
+    margin-right: 7.3vw;
+    font-family: "Inconsolata", monospace;
+}
+
+#mission {
+    margin-top: 14vh;
+    font-style: italic;
+}
+
+#workGrid {
+    margin-top: 6vh;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 4vw;
+    justify-content: right;
+}
+
+.workItem {
+    width: 43vw;
+    margin-left: 2vw;
+    margin-bottom: 10vh;
+}
+
+.workTitle {
+    width: 90%;
+    margin-bottom: 2vh;
+}
+
+a {
+    color: white;
+    font-size: 1.7em;
+}
+
+a:hover {
+    color: white;
+}
+
+.workImage {
+    width: 90%;
+    float: center;
+}
+
+.reveal {
+    opacity: 0;
+    -webkit-transform: scale(0.9);
+    -moz-transform: scale(0.9);
+    -ms-transform: scale(0.9);
+    -o-transform: scale(0.9);
+    transform: scale(0.9);
+    -webkit-transition: all 1s ease-in-out;
+    -moz-transition: all 1s ease-in-out;
+    -ms-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+}
+
+.reveal.visible {
+    opacity: 1;
+    -webkit-transform: none;
+    -moz-transform: none;
+    -ms-transform: none;
+    -o-transform: none;
+    transform: none;
+}
