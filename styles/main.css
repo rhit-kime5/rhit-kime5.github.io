@@ -38,13 +38,12 @@ body {
 
 .workItem {
     width: 43vw;
-    margin-left: 0.5vw;
-    margin-right: 0.5vw;
+    margin-left: 2vw;
     margin-bottom: 10vh;
 }
 
 .workTitle {
-    max-width: 90%;
+    width: 90%;
     margin-bottom: 2vh;
 }
 
@@ -58,7 +57,7 @@ a:hover {
 }
 
 .workImage {
-    max-width: 90%;
+    width: 90%;
     float: center;
 }
 
