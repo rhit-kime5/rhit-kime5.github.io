@@ -17,7 +17,7 @@ var reveal2Elements = document.getElementsByClassName("reveal2");
 	for (var i = 0; i < reveal2Elements.length; i++) { 
 		new ScrollMagic.Scene({
 				triggerElement: reveal2Elements[i], 
-				offset: 50, 
+				offset: 100, 
 				duration: "0",
 				triggerHook: 1,
 			}) 
