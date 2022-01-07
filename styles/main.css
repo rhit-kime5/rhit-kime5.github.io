@@ -50,16 +50,16 @@ body {
     margin-bottom: 10vh;
 }
 
-#workPageItem {
+#workPageLeft {
     margin-left: 7.3vw;
 }
 
-#workTextItem {
+#workPageRight {
     width: 43vw;
     margin-left: 0;
 }
 
-.workText {
+.workText, .descriptionBox {
     color: white;
     font-size: 1.45em;
 }
@@ -78,15 +78,27 @@ a:hover {
     color: white;
 }
 
-.workImage, .workText {
+.workImage, .workText{
     width: 90%;
     float: center;
+}
+
+.inTextLink {
+    font-size: 1em;
+    text-decoration-line: underline;
+    color: #75DBFF;
+}
+
+.descriptionBox {
+    margin-left: 7.3vw;
+    margin-right: 7.3vw;
 }
 
 
 
 
-.reveal {
+
+.reveal1, .reveal2 {
     opacity: 0;
     -webkit-transform: scale(0.9);
     -moz-transform: scale(0.9);
@@ -100,7 +112,7 @@ a:hover {
     transition: all 1s ease-in-out;
 }
 
-.reveal.visible {
+.reveal1.visible, .reveal2.visible {
     opacity: 1;
     -webkit-transform: none;
     -moz-transform: none;

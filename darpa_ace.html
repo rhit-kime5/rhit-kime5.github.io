@@ -35,43 +35,94 @@
 
   <div class="workGrid" id="workPage">
 
-    <div class="workItem" id="workPageItem">
-      <a href="darpa_ace.html">
-        <img src="images/DARPA ACE.webp" class="workImage"/>
-      </a>
+    <div class="workItem" id="workPageLeft">
+      <img src="images/DARPA ACE.webp" class="workImage"/>
     </div>
 
-    <div class="workItem" id="workTextItem">
-
+    <div class="workItem" id="workPageRight">
       <div class="workText">
-        <p><b>Type:</b>&nbsp Internship</p>
-        <p><b>Employer:</b>&nbsp Heron Systems, Inc.</p>
+        
+        <p><b>Type:</b>&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp Internship</p>
+        <p><b>Employer:</b>&nbspHeron Systems, Inc.</p>
         <p>
           <b>Program:</b>&nbsp Defense Advanced Research Projects Agency<br>
-          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (DARPA) - Air Combat Evolution
+          &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp (DARPA) - 
+          <a href="https://www.darpa.mil/program/air-combat-evolution" class="inTextLink">
+            Air Combat Evolution
+          </a>
         </p>
         <p><b>Duration:</b>&nbsp May 2021 - August 2021</p>
-
-
-
       </div>
-
     </div>
 
-    <!-- 
-      need to put:
+    <div class="workItem" id="workPageLeft">
+      <div class="workText">
+        <!-- <p><b>Work</b></p> -->
+        <p>
+          Evolved and enhanced Falco, <mark>the first-ever AI agent</mark> to defeat a human fighter pilot 
+          and the decisive winner of the 
+          <a href="https://www.airforcemag.com/artificial-intelligence-easily-beats-human-fighter-pilot-in-darpa-trial/" class="inTextLink">
+            DARPA Alpha Dogfight Trials</a>;
+        </p>
+        <p>
+          Employed <mark>deep reinforcement learning</mark> to extend the agents’ capability to multi-agent tactical coordination and collaboration, for both within-visual-range and beyond-visual-range combat;
+        </p>
+        <p>
+          Supported Heron Systems’ success in proceeding to DARPA’s Program Phase 2 in a down-select from eight to three contractors, 
+          <mark>cutting Lockheed Martin and Boeing</mark>.
+        </p>
+        
+      </div>
+    </div>
 
-      recommendation
-      video from Heron Systems / DARPA
-      article links
-      detailed description from emails/applications written
-     -->
+    <div class="workItem" id="workPageRight">
+      <iframe width="100%" height="420vh" src="https://www.youtube.com/embed/IIdE5XFTA88?start=457"></iframe>
+    </div>
 
+    <div class="workItem reveal2" id="workPageLeft">
+      <iframe width="90%" height="900vh" src="https://www.linkedin.com/embed/feed/update/urn:li:share:6839361016015523840"></iframe>
+    </div>
 
-
-
+    <div class="workItem reveal2" id="workPageRight">
+      <iframe width="100%" height="900vh" src="files/Recommendation_Edward_Kim.pdf" ></iframe>
+    </div>
 
   </div>
+
+  <div class="descriptionBox reveal2">
+    <p>
+      <b>Detailed Description:</b>
+    </p>
+    <p>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp The world’s best fighter pilot is being trained, right now, to control an entire fleet of fighter jets in the deep reinforcement learning infrastructure I have written with two other interns. That was this summer at Heron Systems, whose AI agent has defeated a top gun Air Force pilot and agents from seven other defense contractors in a notorious victory at the DARPA Alpha Dogfight Trials. The competition tested AI capability in one-on-one dogfights; the next challenge of the DARPA Air Combat Evolution program was to develop a system that can control multiple aircraft to counter and defeat multiple enemy aircraft. 
+    </p>
+    <p>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp There were two main issues: maintaining existing performance of individual aircraft and addressing the proportionally reduced training speed. As the existing agent had already accumulated billions of steps of experience, it was not a competitive option to simply retrain a larger neural network with the expanded observation space and action space. Instead, we performed a “surgery” on the neural network by transplanting the single-aircraft agent into a modular neural network, training it with a new reward function for collective performance and safety while the lower-level networks continued to handle the dogfighting maneuvers and tactics. Yet, even this approach was not competitive enough — simulated against our baseline approach of training each single-aircraft agent separately, we found that even the slightest flaws in the central-controlled group were exploited by well-trained individuals to divide the fight into temporary one-on-one scenarios where they had the advantage. We deemed this inevitable by the time-sensitive nature of air combat (in the scale of milliseconds), and proceeded with the independent training of single-aircraft agents as our primary approach. The resulting agents were able to sustain and exceed existing performance, and generalized much better for different numbers of friendly and enemy aircraft compared to the centralized agents. 
+    </p>
+    <p>
+      &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp However, their biggest problem was training speed. Only one agent could be trained at a time, as all other friendly and enemy aircraft had to be included in the environment for reinforcement learning. This reduced our effective training speed by a factor of the total number of aircraft in a given combat scenario. The effect was not as severe for the 2 vs 2 scenarios that were due soon, but our victory was at risk for the 30 vs 30 scenarios planned by DARPA; the program competitors saw, round after round, that one more day of training can change everything. Therefore, I led a side project to rebuild our training and testing infrastructure, with multi-agent training. We started by pipelining the existing infrastructure and reused the data collection, preprocessing, and testing modules. Then, through a sequence of asynchronous execution and synchronization, we developed an architecture capable of simultaneous and independent multi-agent training while maintaining the feedback loop of reinforcement learning. After testing, we found it to increase training speed to be similar to one-on-one dogfights (60 times faster for 30 vs 30 scenarios), and soon defeated our own 2 vs 2 agents that have been training since a month ago in the previous infrastructure. The project was recognized by our senior engineers to replace many of the core software in our AI training factory, and was noted a progress that another competitor has put in “two years, millions of dollars, and [is] still working on it.”
+    </p>
+
+    <div>
+      <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    </div>
+
+    <a href="#" style="font-size: 1em;">Return to Top</a>
+    <br>
+    <a href="index.html" style="font-size: 1em;">Return to Home</a>
+
+    <div>
+      <br>
+    </div>
+    
+  </div>
+
+
+
+
+
+
+
 
   
 
